@@ -28,63 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnDeleteBuku = new System.Windows.Forms.Button();
-            this.btnUpdateBuku = new System.Windows.Forms.Button();
-            this.btnAddBuku = new System.Windows.Forms.Button();
-            this.dgvBuku = new System.Windows.Forms.DataGridView();
-            this.tbKategori = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbPengarang = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbJudulBuku = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbKodeBuku = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.tbJumlahBuku = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbNoRak = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dgvStokBuku = new System.Windows.Forms.DataGridView();
-            this.cbJudulBuku = new System.Windows.Forms.ComboBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.dgvPeminjaman = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cbStatus = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cbJudulBukuP = new System.Windows.Forms.ComboBox();
-            this.tbAlamatPeminjam = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tbNamaPeminjam = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label17 = new System.Windows.Forms.Label();
-            this.status = new System.Windows.Forms.ComboBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.dgvUser = new System.Windows.Forms.DataGridView();
-            this.password = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panelLogin = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -93,35 +37,80 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuku)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStokBuku)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjaman)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDeleteBuku = new System.Windows.Forms.Button();
+            this.btnUpdateBuku = new System.Windows.Forms.Button();
+            this.btnAddBuku = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.dgvStokBuku = new System.Windows.Forms.DataGridView();
+            this.cbJudulBuku = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dgvPeminjaman = new System.Windows.Forms.DataGridView();
+            this.cbStatus = new System.Windows.Forms.ComboBox();
+            this.cbJudulBukuP = new System.Windows.Forms.ComboBox();
+            this.tbAlamatPeminjam = new System.Windows.Forms.TextBox();
+            this.tbNamaPeminjam = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.status = new System.Windows.Forms.ComboBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.dgvUser = new System.Windows.Forms.DataGridView();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.label15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.tbKodeBuku = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbJudulBuku = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbPengarang = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbKategori = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbNoRak = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbJumlahBuku = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.username = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.password = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.dgvBuku = new System.Windows.Forms.DataGridView();
             this.panelLogin.SuspendLayout();
+            this.materialTabControl1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStokBuku)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjaman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBuku)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(67)))), ((int)(((byte)(54)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(925, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "X";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -133,694 +122,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Perpustakaan";
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.ItemSize = new System.Drawing.Size(100, 30);
-            this.tabControl1.Location = new System.Drawing.Point(12, 84);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(976, 564);
-            this.tabControl1.TabIndex = 2;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage1.Controls.Add(this.btnRefresh);
-            this.tabPage1.Controls.Add(this.btnDeleteBuku);
-            this.tabPage1.Controls.Add(this.btnUpdateBuku);
-            this.tabPage1.Controls.Add(this.btnAddBuku);
-            this.tabPage1.Controls.Add(this.dgvBuku);
-            this.tabPage1.Controls.Add(this.tbKategori);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.tbPengarang);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.tbJudulBuku);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.tbKodeBuku);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(968, 526);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Daftar Buku";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(192, 354);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(140, 32);
-            this.btnRefresh.TabIndex = 12;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // btnDeleteBuku
-            // 
-            this.btnDeleteBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btnDeleteBuku.FlatAppearance.BorderSize = 0;
-            this.btnDeleteBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnDeleteBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnDeleteBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteBuku.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBuku.Location = new System.Drawing.Point(30, 354);
-            this.btnDeleteBuku.Name = "btnDeleteBuku";
-            this.btnDeleteBuku.Size = new System.Drawing.Size(140, 32);
-            this.btnDeleteBuku.TabIndex = 11;
-            this.btnDeleteBuku.Text = "Delete";
-            this.btnDeleteBuku.UseVisualStyleBackColor = false;
-            this.btnDeleteBuku.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // btnUpdateBuku
-            // 
-            this.btnUpdateBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdateBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btnUpdateBuku.FlatAppearance.BorderSize = 0;
-            this.btnUpdateBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnUpdateBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnUpdateBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateBuku.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateBuku.Location = new System.Drawing.Point(192, 306);
-            this.btnUpdateBuku.Name = "btnUpdateBuku";
-            this.btnUpdateBuku.Size = new System.Drawing.Size(140, 32);
-            this.btnUpdateBuku.TabIndex = 10;
-            this.btnUpdateBuku.Text = "Update";
-            this.btnUpdateBuku.UseVisualStyleBackColor = false;
-            this.btnUpdateBuku.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btnAddBuku
-            // 
-            this.btnAddBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btnAddBuku.FlatAppearance.BorderSize = 0;
-            this.btnAddBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.btnAddBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.btnAddBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBuku.ForeColor = System.Drawing.Color.White;
-            this.btnAddBuku.Location = new System.Drawing.Point(30, 306);
-            this.btnAddBuku.Name = "btnAddBuku";
-            this.btnAddBuku.Size = new System.Drawing.Size(140, 32);
-            this.btnAddBuku.TabIndex = 9;
-            this.btnAddBuku.Text = "Add";
-            this.btnAddBuku.UseVisualStyleBackColor = false;
-            this.btnAddBuku.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // dgvBuku
-            // 
-            this.dgvBuku.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuku.Location = new System.Drawing.Point(401, 23);
-            this.dgvBuku.Name = "dgvBuku";
-            this.dgvBuku.Size = new System.Drawing.Size(543, 363);
-            this.dgvBuku.TabIndex = 8;
-            this.dgvBuku.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuku_CellClick);
-            this.dgvBuku.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuku_CellContentClick);
-            // 
-            // tbKategori
-            // 
-            this.tbKategori.Location = new System.Drawing.Point(30, 187);
-            this.tbKategori.Name = "tbKategori";
-            this.tbKategori.Size = new System.Drawing.Size(182, 25);
-            this.tbKategori.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 167);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Kategori";
-            // 
-            // tbPengarang
-            // 
-            this.tbPengarang.Location = new System.Drawing.Point(30, 139);
-            this.tbPengarang.Name = "tbPengarang";
-            this.tbPengarang.Size = new System.Drawing.Size(302, 25);
-            this.tbPengarang.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 119);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Pengarang";
-            // 
-            // tbJudulBuku
-            // 
-            this.tbJudulBuku.Location = new System.Drawing.Point(30, 91);
-            this.tbJudulBuku.Name = "tbJudulBuku";
-            this.tbJudulBuku.Size = new System.Drawing.Size(302, 25);
-            this.tbJudulBuku.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Judul Buku";
-            // 
-            // tbKodeBuku
-            // 
-            this.tbKodeBuku.Location = new System.Drawing.Point(30, 43);
-            this.tbKodeBuku.Name = "tbKodeBuku";
-            this.tbKodeBuku.Size = new System.Drawing.Size(180, 25);
-            this.tbKodeBuku.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 17);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Kode Buku";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button9);
-            this.tabPage2.Controls.Add(this.button10);
-            this.tabPage2.Controls.Add(this.tbJumlahBuku);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.tbNoRak);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.dgvStokBuku);
-            this.tabPage2.Controls.Add(this.cbJudulBuku);
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(968, 526);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Stok Buku";
-            // 
-            // button8
-            // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(803, 488);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(140, 32);
-            this.button8.TabIndex = 19;
-            this.button8.Text = "Report";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // button7
-            // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(114, 354);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(140, 32);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "Refresh";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button9
-            // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(192, 306);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(140, 32);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "Update";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(30, 306);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(140, 32);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Add";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // tbJumlahBuku
-            // 
-            this.tbJumlahBuku.Location = new System.Drawing.Point(30, 147);
-            this.tbJumlahBuku.Name = "tbJumlahBuku";
-            this.tbJumlahBuku.Size = new System.Drawing.Size(302, 25);
-            this.tbJumlahBuku.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 127);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 17);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Jumlah Buku";
-            // 
-            // tbNoRak
-            // 
-            this.tbNoRak.Location = new System.Drawing.Point(30, 99);
-            this.tbNoRak.Name = "tbNoRak";
-            this.tbNoRak.Size = new System.Drawing.Size(302, 25);
-            this.tbNoRak.TabIndex = 12;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 79);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 17);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Nomor Rak";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 17);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Judul Buku";
-            // 
-            // dgvStokBuku
-            // 
-            this.dgvStokBuku.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvStokBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStokBuku.Location = new System.Drawing.Point(400, 23);
-            this.dgvStokBuku.Name = "dgvStokBuku";
-            this.dgvStokBuku.Size = new System.Drawing.Size(543, 363);
-            this.dgvStokBuku.TabIndex = 9;
-            this.dgvStokBuku.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStokBuku_CellClick);
-            this.dgvStokBuku.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStokBuku_CellContentClick);
-            // 
-            // cbJudulBuku
-            // 
-            this.cbJudulBuku.FormattingEnabled = true;
-            this.cbJudulBuku.Location = new System.Drawing.Point(30, 51);
-            this.cbJudulBuku.Name = "cbJudulBuku";
-            this.cbJudulBuku.Size = new System.Drawing.Size(180, 25);
-            this.cbJudulBuku.TabIndex = 0;
-            this.cbJudulBuku.SelectedIndexChanged += new System.EventHandler(this.cbJudulBuku_SelectedIndexChanged);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.dgvPeminjaman);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.cbStatus);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.cbJudulBukuP);
-            this.tabPage3.Controls.Add(this.tbAlamatPeminjam);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.tbNamaPeminjam);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(968, 526);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Peminjaman";
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(803, 479);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 32);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "Report";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_2);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(102, 354);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 32);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Refresh";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(193, 306);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 32);
-            this.button4.TabIndex = 28;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(31, 306);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 32);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Submit";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // dgvPeminjaman
-            // 
-            this.dgvPeminjaman.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvPeminjaman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPeminjaman.Location = new System.Drawing.Point(400, 23);
-            this.dgvPeminjaman.Name = "dgvPeminjaman";
-            this.dgvPeminjaman.Size = new System.Drawing.Size(543, 363);
-            this.dgvPeminjaman.TabIndex = 25;
-            this.dgvPeminjaman.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjaman_CellClick);
-            this.dgvPeminjaman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjaman_CellContentClick);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(28, 198);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 17);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Status";
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.FormattingEnabled = true;
-            this.cbStatus.Items.AddRange(new object[] {
-            "Pinjam",
-            "Kembali"});
-            this.cbStatus.Location = new System.Drawing.Point(31, 218);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(180, 25);
-            this.cbStatus.TabIndex = 23;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(27, 23);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(72, 20);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "Tanggal : ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(98, 23);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 20);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "date";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(28, 150);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 17);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Judul Buku";
-            // 
-            // cbJudulBukuP
-            // 
-            this.cbJudulBukuP.FormattingEnabled = true;
-            this.cbJudulBukuP.Location = new System.Drawing.Point(31, 170);
-            this.cbJudulBukuP.Name = "cbJudulBukuP";
-            this.cbJudulBukuP.Size = new System.Drawing.Size(180, 25);
-            this.cbJudulBukuP.TabIndex = 19;
-            // 
-            // tbAlamatPeminjam
-            // 
-            this.tbAlamatPeminjam.Location = new System.Drawing.Point(31, 122);
-            this.tbAlamatPeminjam.Name = "tbAlamatPeminjam";
-            this.tbAlamatPeminjam.Size = new System.Drawing.Size(302, 25);
-            this.tbAlamatPeminjam.TabIndex = 16;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(28, 102);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 17);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Alamat Peminjam";
-            // 
-            // tbNamaPeminjam
-            // 
-            this.tbNamaPeminjam.Location = new System.Drawing.Point(31, 74);
-            this.tbNamaPeminjam.Name = "tbNamaPeminjam";
-            this.tbNamaPeminjam.Size = new System.Drawing.Size(302, 25);
-            this.tbNamaPeminjam.TabIndex = 14;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(28, 54);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 17);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Nama Peminjam";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.status);
-            this.tabPage4.Controls.Add(this.button11);
-            this.tabPage4.Controls.Add(this.button12);
-            this.tabPage4.Controls.Add(this.button13);
-            this.tabPage4.Controls.Add(this.button14);
-            this.tabPage4.Controls.Add(this.dgvUser);
-            this.tabPage4.Controls.Add(this.password);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.username);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(968, 526);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "User";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(27, 119);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 17);
-            this.label17.TabIndex = 27;
-            this.label17.Text = "Status";
-            // 
-            // status
-            // 
-            this.status.FormattingEnabled = true;
-            this.status.Items.AddRange(new object[] {
-            "Admin",
-            "User"});
-            this.status.Location = new System.Drawing.Point(30, 139);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(180, 25);
-            this.status.TabIndex = 26;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(192, 354);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(140, 32);
-            this.button11.TabIndex = 25;
-            this.button11.Text = "Refresh";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(30, 354);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(140, 32);
-            this.button12.TabIndex = 24;
-            this.button12.Text = "Delete";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(192, 306);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(140, 32);
-            this.button13.TabIndex = 23;
-            this.button13.Text = "Update";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button14
-            // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(30, 306);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(140, 32);
-            this.button14.TabIndex = 22;
-            this.button14.Text = "Add";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // dgvUser
-            // 
-            this.dgvUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Location = new System.Drawing.Point(401, 25);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.Size = new System.Drawing.Size(543, 363);
-            this.dgvUser.TabIndex = 21;
-            // 
-            // password
-            // 
-            this.password.Location = new System.Drawing.Point(30, 91);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(302, 25);
-            this.password.TabIndex = 16;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(27, 71);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 17);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "Password";
-            // 
-            // username
-            // 
-            this.username.Location = new System.Drawing.Point(30, 43);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(302, 25);
-            this.username.TabIndex = 14;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(27, 23);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 17);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "Username";
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(29, 65);
+            this.button2.Location = new System.Drawing.Point(30, 65);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(720, 2);
             this.button2.TabIndex = 3;
@@ -905,7 +213,7 @@
             this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(925, 31);
+            this.btnLogout.Location = new System.Drawing.Point(885, 31);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 29);
             this.btnLogout.TabIndex = 26;
@@ -914,18 +222,914 @@
             this.btnLogout.Visible = false;
             this.btnLogout.Click += new System.EventHandler(this.button15_Click);
             // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(30, 77);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(930, 33);
+            this.materialTabSelector1.TabIndex = 27;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // materialTabControl1
+            // 
+            this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
+            this.materialTabControl1.Controls.Add(this.tabPage7);
+            this.materialTabControl1.Controls.Add(this.tabPage8);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Location = new System.Drawing.Point(30, 112);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(930, 536);
+            this.materialTabControl1.TabIndex = 28;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.dgvBuku);
+            this.tabPage5.Controls.Add(this.tbKategori);
+            this.tabPage5.Controls.Add(this.tbPengarang);
+            this.tabPage5.Controls.Add(this.tbJudulBuku);
+            this.tabPage5.Controls.Add(this.tbKodeBuku);
+            this.tabPage5.Controls.Add(this.textBox1);
+            this.tabPage5.Controls.Add(this.label22);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.btnRefresh);
+            this.tabPage5.Controls.Add(this.btnDeleteBuku);
+            this.tabPage5.Controls.Add(this.btnUpdateBuku);
+            this.tabPage5.Controls.Add(this.btnAddBuku);
+            this.tabPage5.Location = new System.Drawing.Point(4, 26);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(922, 506);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Daftar Buku";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.White;
+            this.tabPage6.Controls.Add(this.button5);
+            this.tabPage6.Controls.Add(this.textBox2);
+            this.tabPage6.Controls.Add(this.label2);
+            this.tabPage6.Controls.Add(this.tbJumlahBuku);
+            this.tabPage6.Controls.Add(this.tbNoRak);
+            this.tabPage6.Controls.Add(this.materialLabel7);
+            this.tabPage6.Controls.Add(this.label21);
+            this.tabPage6.Controls.Add(this.button7);
+            this.tabPage6.Controls.Add(this.button9);
+            this.tabPage6.Controls.Add(this.button10);
+            this.tabPage6.Controls.Add(this.dgvStokBuku);
+            this.tabPage6.Controls.Add(this.cbJudulBuku);
+            this.tabPage6.Location = new System.Drawing.Point(4, 26);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(922, 506);
+            this.tabPage6.TabIndex = 1;
+            this.tabPage6.Text = "Stok Buku";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.White;
+            this.tabPage7.Controls.Add(this.materialLabel8);
+            this.tabPage7.Controls.Add(this.dateTimePicker1);
+            this.tabPage7.Controls.Add(this.button8);
+            this.tabPage7.Controls.Add(this.textBox3);
+            this.tabPage7.Controls.Add(this.label3);
+            this.tabPage7.Controls.Add(this.materialLabel6);
+            this.tabPage7.Controls.Add(this.label15);
+            this.tabPage7.Controls.Add(this.materialLabel5);
+            this.tabPage7.Controls.Add(this.materialLabel4);
+            this.tabPage7.Controls.Add(this.materialLabel3);
+            this.tabPage7.Controls.Add(this.materialLabel2);
+            this.tabPage7.Controls.Add(this.materialLabel1);
+            this.tabPage7.Controls.Add(this.button3);
+            this.tabPage7.Controls.Add(this.button4);
+            this.tabPage7.Controls.Add(this.button6);
+            this.tabPage7.Controls.Add(this.dgvPeminjaman);
+            this.tabPage7.Controls.Add(this.cbStatus);
+            this.tabPage7.Controls.Add(this.cbJudulBukuP);
+            this.tabPage7.Controls.Add(this.tbAlamatPeminjam);
+            this.tabPage7.Controls.Add(this.tbNamaPeminjam);
+            this.tabPage7.Location = new System.Drawing.Point(4, 26);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(922, 506);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Peminjaman";
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.BackColor = System.Drawing.Color.White;
+            this.tabPage8.Controls.Add(this.password);
+            this.tabPage8.Controls.Add(this.username);
+            this.tabPage8.Controls.Add(this.button15);
+            this.tabPage8.Controls.Add(this.textBox4);
+            this.tabPage8.Controls.Add(this.label4);
+            this.tabPage8.Controls.Add(this.label17);
+            this.tabPage8.Controls.Add(this.status);
+            this.tabPage8.Controls.Add(this.button11);
+            this.tabPage8.Controls.Add(this.button12);
+            this.tabPage8.Controls.Add(this.button13);
+            this.tabPage8.Controls.Add(this.button14);
+            this.tabPage8.Controls.Add(this.dgvUser);
+            this.tabPage8.Location = new System.Drawing.Point(4, 26);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(922, 506);
+            this.tabPage8.TabIndex = 3;
+            this.tabPage8.Text = "User";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(192, 383);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(140, 32);
+            this.btnRefresh.TabIndex = 51;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnDeleteBuku
+            // 
+            this.btnDeleteBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btnDeleteBuku.FlatAppearance.BorderSize = 0;
+            this.btnDeleteBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnDeleteBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnDeleteBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteBuku.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteBuku.Location = new System.Drawing.Point(30, 383);
+            this.btnDeleteBuku.Name = "btnDeleteBuku";
+            this.btnDeleteBuku.Size = new System.Drawing.Size(140, 32);
+            this.btnDeleteBuku.TabIndex = 50;
+            this.btnDeleteBuku.Text = "Delete";
+            this.btnDeleteBuku.UseVisualStyleBackColor = false;
+            this.btnDeleteBuku.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btnUpdateBuku
+            // 
+            this.btnUpdateBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btnUpdateBuku.FlatAppearance.BorderSize = 0;
+            this.btnUpdateBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnUpdateBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnUpdateBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateBuku.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateBuku.Location = new System.Drawing.Point(192, 335);
+            this.btnUpdateBuku.Name = "btnUpdateBuku";
+            this.btnUpdateBuku.Size = new System.Drawing.Size(140, 32);
+            this.btnUpdateBuku.TabIndex = 49;
+            this.btnUpdateBuku.Text = "Update";
+            this.btnUpdateBuku.UseVisualStyleBackColor = false;
+            this.btnUpdateBuku.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnAddBuku
+            // 
+            this.btnAddBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddBuku.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.btnAddBuku.FlatAppearance.BorderSize = 0;
+            this.btnAddBuku.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.btnAddBuku.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.btnAddBuku.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddBuku.ForeColor = System.Drawing.Color.White;
+            this.btnAddBuku.Location = new System.Drawing.Point(30, 335);
+            this.btnAddBuku.Name = "btnAddBuku";
+            this.btnAddBuku.Size = new System.Drawing.Size(140, 32);
+            this.btnAddBuku.TabIndex = 48;
+            this.btnAddBuku.Text = "Add";
+            this.btnAddBuku.UseVisualStyleBackColor = false;
+            this.btnAddBuku.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(114, 382);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(140, 32);
+            this.button7.TabIndex = 28;
+            this.button7.Text = "Refresh";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button9
+            // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(192, 334);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(140, 32);
+            this.button9.TabIndex = 27;
+            this.button9.Text = "Update";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(30, 334);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(140, 32);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "Add";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // dgvStokBuku
+            // 
+            this.dgvStokBuku.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvStokBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStokBuku.GridColor = System.Drawing.Color.White;
+            this.dgvStokBuku.Location = new System.Drawing.Point(356, 55);
+            this.dgvStokBuku.Name = "dgvStokBuku";
+            this.dgvStokBuku.Size = new System.Drawing.Size(540, 360);
+            this.dgvStokBuku.TabIndex = 20;
+            this.dgvStokBuku.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStokBuku_CellClick);
+            // 
+            // cbJudulBuku
+            // 
+            this.cbJudulBuku.BackColor = System.Drawing.Color.White;
+            this.cbJudulBuku.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbJudulBuku.FormattingEnabled = true;
+            this.cbJudulBuku.Location = new System.Drawing.Point(30, 80);
+            this.cbJudulBuku.Name = "cbJudulBuku";
+            this.cbJudulBuku.Size = new System.Drawing.Size(180, 25);
+            this.cbJudulBuku.TabIndex = 19;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(113, 413);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 32);
+            this.button3.TabIndex = 43;
+            this.button3.Text = "Refresh";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(194, 365);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 32);
+            this.button4.TabIndex = 42;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(32, 365);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 32);
+            this.button6.TabIndex = 41;
+            this.button6.Text = "Submit";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // dgvPeminjaman
+            // 
+            this.dgvPeminjaman.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPeminjaman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPeminjaman.Location = new System.Drawing.Point(356, 85);
+            this.dgvPeminjaman.Name = "dgvPeminjaman";
+            this.dgvPeminjaman.Size = new System.Drawing.Size(540, 360);
+            this.dgvPeminjaman.TabIndex = 40;
+            this.dgvPeminjaman.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjaman_CellClick);
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbStatus.FormattingEnabled = true;
+            this.cbStatus.Items.AddRange(new object[] {
+            "Pinjam",
+            "Kembali"});
+            this.cbStatus.Location = new System.Drawing.Point(32, 261);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(180, 25);
+            this.cbStatus.TabIndex = 38;
+            // 
+            // cbJudulBukuP
+            // 
+            this.cbJudulBukuP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbJudulBukuP.FormattingEnabled = true;
+            this.cbJudulBukuP.Location = new System.Drawing.Point(32, 211);
+            this.cbJudulBukuP.Name = "cbJudulBukuP";
+            this.cbJudulBukuP.Size = new System.Drawing.Size(180, 25);
+            this.cbJudulBukuP.TabIndex = 34;
+            // 
+            // tbAlamatPeminjam
+            // 
+            this.tbAlamatPeminjam.Location = new System.Drawing.Point(32, 157);
+            this.tbAlamatPeminjam.Name = "tbAlamatPeminjam";
+            this.tbAlamatPeminjam.Size = new System.Drawing.Size(302, 25);
+            this.tbAlamatPeminjam.TabIndex = 33;
+            // 
+            // tbNamaPeminjam
+            // 
+            this.tbNamaPeminjam.Location = new System.Drawing.Point(32, 107);
+            this.tbNamaPeminjam.Name = "tbNamaPeminjam";
+            this.tbNamaPeminjam.Size = new System.Drawing.Size(302, 25);
+            this.tbNamaPeminjam.TabIndex = 31;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(22, 125);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 17);
+            this.label17.TabIndex = 38;
+            this.label17.Text = "Status";
+            // 
+            // status
+            // 
+            this.status.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "Admin",
+            "User"});
+            this.status.Location = new System.Drawing.Point(25, 145);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(199, 25);
+            this.status.TabIndex = 37;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(192, 359);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(140, 32);
+            this.button11.TabIndex = 36;
+            this.button11.Text = "Refresh";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(30, 359);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(140, 32);
+            this.button12.TabIndex = 35;
+            this.button12.Text = "Delete";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(192, 311);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(140, 32);
+            this.button13.TabIndex = 34;
+            this.button13.Text = "Update";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Location = new System.Drawing.Point(30, 311);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(140, 32);
+            this.button14.TabIndex = 33;
+            this.button14.Text = "Add";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // dgvUser
+            // 
+            this.dgvUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUser.Location = new System.Drawing.Point(354, 31);
+            this.dgvUser.Name = "dgvUser";
+            this.dgvUser.Size = new System.Drawing.Size(540, 360);
+            this.dgvUser.TabIndex = 32;
+            this.dgvUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellClick);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(38, 12);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(96, 30);
+            this.label18.TabIndex = 52;
+            this.label18.Text = "Book List";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(38, 12);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(114, 30);
+            this.label21.TabIndex = 29;
+            this.label21.Text = "Book Stock";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(674, 432);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(222, 25);
+            this.textBox1.TabIndex = 54;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(621, 435);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(47, 17);
+            this.label22.TabIndex = 53;
+            this.label22.Text = "Search";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(28, 85);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(120, 19);
+            this.materialLabel1.TabIndex = 45;
+            this.materialLabel1.Text = "Nama Peminjam";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(28, 135);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(128, 19);
+            this.materialLabel2.TabIndex = 46;
+            this.materialLabel2.Text = "Alamat Peminjam";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(28, 189);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(82, 19);
+            this.materialLabel3.TabIndex = 47;
+            this.materialLabel3.Text = "Judul Buku";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(28, 239);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(52, 19);
+            this.materialLabel4.TabIndex = 48;
+            this.materialLabel4.Text = "Status";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(16, 56);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(70, 19);
+            this.materialLabel5.TabIndex = 49;
+            this.materialLabel5.Text = "Tanggal :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Depth = 0;
+            this.label15.Font = new System.Drawing.Font("Roboto", 11F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label15.Location = new System.Drawing.Point(92, 56);
+            this.label15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(38, 19);
+            this.label15.TabIndex = 50;
+            this.label15.Text = "date";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel6.Location = new System.Drawing.Point(38, 12);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(130, 30);
+            this.materialLabel6.TabIndex = 51;
+            this.materialLabel6.Text = "Borrow Book";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel7.Location = new System.Drawing.Point(30, 55);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(82, 19);
+            this.materialLabel7.TabIndex = 48;
+            this.materialLabel7.Text = "Judul Buku";
+            // 
+            // tbKodeBuku
+            // 
+            this.tbKodeBuku.Depth = 0;
+            this.tbKodeBuku.Hint = "Kode Buku";
+            this.tbKodeBuku.Location = new System.Drawing.Point(30, 80);
+            this.tbKodeBuku.MaxLength = 32767;
+            this.tbKodeBuku.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbKodeBuku.Name = "tbKodeBuku";
+            this.tbKodeBuku.PasswordChar = '\0';
+            this.tbKodeBuku.SelectedText = "";
+            this.tbKodeBuku.SelectionLength = 0;
+            this.tbKodeBuku.SelectionStart = 0;
+            this.tbKodeBuku.Size = new System.Drawing.Size(140, 23);
+            this.tbKodeBuku.TabIndex = 59;
+            this.tbKodeBuku.TabStop = false;
+            this.tbKodeBuku.UseSystemPasswordChar = false;
+            // 
+            // tbJudulBuku
+            // 
+            this.tbJudulBuku.Depth = 0;
+            this.tbJudulBuku.Hint = "Judul Buku";
+            this.tbJudulBuku.Location = new System.Drawing.Point(30, 120);
+            this.tbJudulBuku.MaxLength = 32767;
+            this.tbJudulBuku.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbJudulBuku.Name = "tbJudulBuku";
+            this.tbJudulBuku.PasswordChar = '\0';
+            this.tbJudulBuku.SelectedText = "";
+            this.tbJudulBuku.SelectionLength = 0;
+            this.tbJudulBuku.SelectionStart = 0;
+            this.tbJudulBuku.Size = new System.Drawing.Size(302, 23);
+            this.tbJudulBuku.TabIndex = 60;
+            this.tbJudulBuku.TabStop = false;
+            this.tbJudulBuku.UseSystemPasswordChar = false;
+            // 
+            // tbPengarang
+            // 
+            this.tbPengarang.Depth = 0;
+            this.tbPengarang.Hint = "Pengarang";
+            this.tbPengarang.Location = new System.Drawing.Point(30, 160);
+            this.tbPengarang.MaxLength = 32767;
+            this.tbPengarang.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbPengarang.Name = "tbPengarang";
+            this.tbPengarang.PasswordChar = '\0';
+            this.tbPengarang.SelectedText = "";
+            this.tbPengarang.SelectionLength = 0;
+            this.tbPengarang.SelectionStart = 0;
+            this.tbPengarang.Size = new System.Drawing.Size(302, 23);
+            this.tbPengarang.TabIndex = 61;
+            this.tbPengarang.TabStop = false;
+            this.tbPengarang.UseSystemPasswordChar = false;
+            // 
+            // tbKategori
+            // 
+            this.tbKategori.Depth = 0;
+            this.tbKategori.Hint = "Kategori";
+            this.tbKategori.Location = new System.Drawing.Point(30, 200);
+            this.tbKategori.MaxLength = 32767;
+            this.tbKategori.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbKategori.Name = "tbKategori";
+            this.tbKategori.PasswordChar = '\0';
+            this.tbKategori.SelectedText = "";
+            this.tbKategori.SelectionLength = 0;
+            this.tbKategori.SelectionStart = 0;
+            this.tbKategori.Size = new System.Drawing.Size(140, 23);
+            this.tbKategori.TabIndex = 62;
+            this.tbKategori.TabStop = false;
+            this.tbKategori.UseSystemPasswordChar = false;
+            // 
+            // tbNoRak
+            // 
+            this.tbNoRak.Depth = 0;
+            this.tbNoRak.Hint = "Nomor Rak";
+            this.tbNoRak.Location = new System.Drawing.Point(30, 130);
+            this.tbNoRak.MaxLength = 32767;
+            this.tbNoRak.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbNoRak.Name = "tbNoRak";
+            this.tbNoRak.PasswordChar = '\0';
+            this.tbNoRak.SelectedText = "";
+            this.tbNoRak.SelectionLength = 0;
+            this.tbNoRak.SelectionStart = 0;
+            this.tbNoRak.Size = new System.Drawing.Size(180, 23);
+            this.tbNoRak.TabIndex = 51;
+            this.tbNoRak.TabStop = false;
+            this.tbNoRak.UseSystemPasswordChar = false;
+            this.tbNoRak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNoRak_KeyPress);
+            // 
+            // tbJumlahBuku
+            // 
+            this.tbJumlahBuku.Depth = 0;
+            this.tbJumlahBuku.Hint = "Jumlah Buku";
+            this.tbJumlahBuku.Location = new System.Drawing.Point(30, 180);
+            this.tbJumlahBuku.MaxLength = 32767;
+            this.tbJumlahBuku.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbJumlahBuku.Name = "tbJumlahBuku";
+            this.tbJumlahBuku.PasswordChar = '\0';
+            this.tbJumlahBuku.SelectedText = "";
+            this.tbJumlahBuku.SelectionLength = 0;
+            this.tbJumlahBuku.SelectionStart = 0;
+            this.tbJumlahBuku.Size = new System.Drawing.Size(180, 23);
+            this.tbJumlahBuku.TabIndex = 52;
+            this.tbJumlahBuku.TabStop = false;
+            this.tbJumlahBuku.UseSystemPasswordChar = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(674, 429);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(222, 25);
+            this.textBox2.TabIndex = 56;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(621, 432);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Search";
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(30, 424);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(302, 32);
+            this.button5.TabIndex = 57;
+            this.button5.Text = "Report";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button8_Click_1);
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(32, 457);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(302, 32);
+            this.button8.TabIndex = 60;
+            this.button8.Text = "Report";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Location = new System.Drawing.Point(674, 462);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(222, 25);
+            this.textBox3.TabIndex = 59;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(621, 465);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.TabIndex = 58;
+            this.label3.Text = "Search";
+            // 
+            // button15
+            // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(247)))));
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Location = new System.Drawing.Point(30, 403);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(302, 32);
+            this.button15.TabIndex = 63;
+            this.button15.Text = "Report";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.Location = new System.Drawing.Point(672, 408);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(222, 25);
+            this.textBox4.TabIndex = 62;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(619, 411);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "Search";
+            // 
+            // username
+            // 
+            this.username.Depth = 0;
+            this.username.Hint = "Username";
+            this.username.Location = new System.Drawing.Point(30, 42);
+            this.username.MaxLength = 32767;
+            this.username.MouseState = MaterialSkin.MouseState.HOVER;
+            this.username.Name = "username";
+            this.username.PasswordChar = '\0';
+            this.username.SelectedText = "";
+            this.username.SelectionLength = 0;
+            this.username.SelectionStart = 0;
+            this.username.Size = new System.Drawing.Size(302, 23);
+            this.username.TabIndex = 64;
+            this.username.TabStop = false;
+            this.username.UseSystemPasswordChar = false;
+            // 
+            // password
+            // 
+            this.password.Depth = 0;
+            this.password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password.Hint = "Password";
+            this.password.Location = new System.Drawing.Point(30, 88);
+            this.password.MaxLength = 32767;
+            this.password.MouseState = MaterialSkin.MouseState.HOVER;
+            this.password.Name = "password";
+            this.password.PasswordChar = '\0';
+            this.password.SelectedText = "";
+            this.password.SelectionLength = 0;
+            this.password.SelectionStart = 0;
+            this.password.Size = new System.Drawing.Size(302, 23);
+            this.password.TabIndex = 65;
+            this.password.TabStop = false;
+            this.password.UseSystemPasswordChar = false;
+            // 
+            // materialFlatButton1
+            // 
+            this.materialFlatButton1.AutoEllipsis = true;
+            this.materialFlatButton1.Depth = 0;
+            this.materialFlatButton1.Icon = null;
+            this.materialFlatButton1.Location = new System.Drawing.Point(928, 0);
+            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton1.Name = "materialFlatButton1";
+            this.materialFlatButton1.Primary = false;
+            this.materialFlatButton1.Size = new System.Drawing.Size(72, 29);
+            this.materialFlatButton1.TabIndex = 29;
+            this.materialFlatButton1.Text = " X    ";
+            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Black;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(212)))), ((int)(((byte)(250)))));
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(32, 311);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(180, 25);
+            this.dateTimePicker1.TabIndex = 61;
+            this.dateTimePicker1.Visible = false;
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel8.Location = new System.Drawing.Point(28, 289);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(120, 19);
+            this.materialLabel8.TabIndex = 62;
+            this.materialLabel8.Text = "Tanggal Kembali";
+            this.materialLabel8.Visible = false;
+            // 
+            // dgvBuku
+            // 
+            this.dgvBuku.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBuku.Location = new System.Drawing.Point(356, 55);
+            this.dgvBuku.Name = "dgvBuku";
+            this.dgvBuku.Size = new System.Drawing.Size(540, 360);
+            this.dgvBuku.TabIndex = 63;
+            this.dgvBuku.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuku_CellClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 660);
+            this.Controls.Add(this.materialFlatButton1);
+            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -933,93 +1137,99 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perpustakaan";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuku)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStokBuku)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjaman)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
+            this.materialTabControl1.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStokBuku)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjaman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBuku)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox tbKategori;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbPengarang;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbJudulBuku;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbKodeBuku;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnDeleteBuku;
-        private System.Windows.Forms.Button btnUpdateBuku;
-        private System.Windows.Forms.Button btnAddBuku;
-        private System.Windows.Forms.DataGridView dgvBuku;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.Button btnLogout;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnDeleteBuku;
+        private System.Windows.Forms.Button btnUpdateBuku;
+        private System.Windows.Forms.Button btnAddBuku;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox tbJumlahBuku;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tbNoRak;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgvStokBuku;
         private System.Windows.Forms.ComboBox cbJudulBuku;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox cbJudulBukuP;
-        private System.Windows.Forms.TextBox tbAlamatPeminjam;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox tbNamaPeminjam;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView dgvPeminjaman;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbStatus;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.ComboBox cbJudulBukuP;
+        private System.Windows.Forms.TextBox tbAlamatPeminjam;
+        private System.Windows.Forms.TextBox tbNamaPeminjam;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox status;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.DataGridView dgvUser;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox status;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label22;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbKodeBuku;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialLabel label15;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbKategori;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbPengarang;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbJudulBuku;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbJumlahBuku;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbNoRak;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label3;
+        private MaterialSkin.Controls.MaterialSingleLineTextField password;
+        private MaterialSkin.Controls.MaterialSingleLineTextField username;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label4;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView dgvBuku;
     }
 }
 

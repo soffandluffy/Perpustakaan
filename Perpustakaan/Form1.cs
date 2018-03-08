@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using CrystalDecisions.CrystalReports.Engine;
+using MaterialSkin;
 
 namespace Perpustakaan
 {
@@ -32,11 +33,14 @@ namespace Perpustakaan
             DGVP();
             DGVUS();
             CBSTOK();
-            CBPINJAM();
 
-            //GenerateBukuCode();
+            GenerateBukuCode();
             DateTime today = System.DateTime.Now;
             label15.Text = today.ToShortDateString();
+
+            MaterialSkin.IMaterialControl materialControl;
+
+
         }
 
         public void DGVB()
@@ -129,51 +133,21 @@ namespace Perpustakaan
                 cmd = new MySqlCommand("SELECT *FROM daftar_buku", koneksi);
                 reader = cmd.ExecuteReader();
                 cbJudulBuku.Items.Clear();
-                while (reader.Read())
-                {
-
-                    cbJudulBuku.Items.Add(reader["judul_buku"].ToString());
-
-                }
-                
-                
-            } catch
-            {
-
-            } finally
-            {
-                reader.Close();
-                koneksi.Close();
-            }
-        }
-
-
-
-        public void CBPINJAM()
-        {
-            try
-            {
-                koneksi.Open();
-                cmd = new MySqlCommand("SELECT *FROM daftar_buku", koneksi);
-                reader = cmd.ExecuteReader();
                 cbJudulBukuP.Items.Clear();
                 while (reader.Read())
                 {
-
+                    cbJudulBuku.Items.Add(reader["judul_buku"].ToString());
                     cbJudulBukuP.Items.Add(reader["judul_buku"].ToString());
-
                 }
-
-
-            }
-            catch
-            {
-
-            }
-            finally
-            {
                 reader.Close();
                 koneksi.Close();
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } finally
+            {
+                
             }
         }
 
@@ -197,6 +171,30 @@ namespace Perpustakaan
             func(Controls);
         }
 
+        public void GenerateBukuCode()
+        {
+            long hitung;
+            string urut;
+            string query = "SELECT kode_buku FROM daftar_buku WHERE kode_buku in(SELECT MAX(kode_buku) FROM daftar_buku) ORDER BY id DESC";
+            koneksi.Open();
+            cmd = new MySqlCommand(query, koneksi);
+            reader = cmd.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows)
+            {
+                hitung = Convert.ToInt32(reader[0].ToString().Substring(reader["kode_buku"].ToString().Length - 4, 4)) + 1;
+                string joinstr = "0000" + hitung;
+                urut = "B" + joinstr.Substring(joinstr.Length - 4, 4);
+            }
+            else
+            {
+                urut = "B0001";
+            }
+            reader.Close();
+            tbKodeBuku.Text = urut;
+            koneksi.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -204,25 +202,31 @@ namespace Perpustakaan
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             try
             {
 
-                koneksi.Open();
-                cmd = new MySqlCommand("INSERT INTO daftar_buku(kode_buku,judul_buku,pengarang,kategori) VALUES(@kode_buku,@judul_buku,@pengarang,@kategori)", koneksi);
-                cmd.Parameters.Add("@kode_buku", tbKodeBuku.Text);
-                cmd.Parameters.Add("@judul_buku", tbJudulBuku.Text);
-                cmd.Parameters.Add("@pengarang", tbPengarang.Text);
-                cmd.Parameters.Add("@kategori", tbKategori.Text);
-                if (cmd.ExecuteNonQuery() > 0)
+                if (tbKodeBuku.Text == "" || tbJudulBuku.Text == "" || tbPengarang.Text == "" || tbKategori.Text == "" )
                 {
-                    MessageBox.Show("Book added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please fill all fields", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 } else
                 {
-                    MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    koneksi.Open();
+                    cmd = new MySqlCommand("INSERT INTO daftar_buku(kode_buku,judul_buku,pengarang,kategori) VALUES(@kode_buku,@judul_buku,@pengarang,@kategori)", koneksi);
+                    cmd.Parameters.Add("@kode_buku", tbKodeBuku.Text);
+                    cmd.Parameters.Add("@judul_buku", tbJudulBuku.Text);
+                    cmd.Parameters.Add("@pengarang", tbPengarang.Text);
+                    cmd.Parameters.Add("@kategori", tbKategori.Text);
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show("Book added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                    clear();
                 }
-                
-                clear();
                 
             } catch (Exception ex)
             {
@@ -231,6 +235,7 @@ namespace Perpustakaan
             {
                 koneksi.Close();
                 DGVB();
+                GenerateBukuCode();
             }
 
         }
@@ -239,20 +244,26 @@ namespace Perpustakaan
         {
             try
             {
-
-                koneksi.Open();
-                cmd = new MySqlCommand("UPDATE daftar_buku SET kode_buku = @kode_buku, judul_buku = @judul_buku, pengarang = @pengarang , kategori = @kategori  WHERE id = '"+ idterpilih +"' ", koneksi);
-                cmd.Parameters.Add("@kode_buku", tbKodeBuku.Text);
-                cmd.Parameters.Add("@judul_buku", tbJudulBuku.Text);
-                cmd.Parameters.Add("@pengarang", tbPengarang.Text);
-                cmd.Parameters.Add("@kategori", tbKategori.Text);
-                if (cmd.ExecuteNonQuery() > 0)
+                if (tbKodeBuku.Text == "" || tbJudulBuku.Text == "" || tbPengarang.Text == "" || tbKategori.Text == "")
                 {
-                    MessageBox.Show("Book updated", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please fill all fields", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    koneksi.Open();
+                    cmd = new MySqlCommand("UPDATE daftar_buku SET kode_buku = @kode_buku, judul_buku = @judul_buku, pengarang = @pengarang , kategori = @kategori  WHERE id = '" + idterpilih + "' ", koneksi);
+                    cmd.Parameters.Add("@kode_buku", tbKodeBuku.Text);
+                    cmd.Parameters.Add("@judul_buku", tbJudulBuku.Text);
+                    cmd.Parameters.Add("@pengarang", tbPengarang.Text);
+                    cmd.Parameters.Add("@kategori", tbKategori.Text);
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show("Book updated", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 
                 clear();
@@ -268,6 +279,7 @@ namespace Perpustakaan
             {
                 koneksi.Close();
                 DGVB();
+                GenerateBukuCode();
             }
         }
 
@@ -275,24 +287,26 @@ namespace Perpustakaan
         {
             try
             {
-
-                koneksi.Open();
-                cmd = new MySqlCommand("DELETE FROM daftar_buku  WHERE id = '" + idterpilih + "' ", koneksi);
-                if (MessageBox.Show("Are you sure want to delete this?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                if (tbKodeBuku.Text == "" || tbJudulBuku.Text == "" || tbPengarang.Text == "" || tbKategori.Text == "")
                 {
-
-                    if (cmd.ExecuteNonQuery() > 0)
-                    {
-                        MessageBox.Show("Book deleted", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
-                } else
+                    MessageBox.Show("Please select book from Data Grid", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
                 {
+                    koneksi.Open();
+                    cmd = new MySqlCommand("DELETE FROM daftar_buku  WHERE id = '" + idterpilih + "' ", koneksi);
+                    if (MessageBox.Show("Are you sure want to delete this?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                    {
 
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Book deleted", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                 }
                 
                 clear();
@@ -306,6 +320,7 @@ namespace Perpustakaan
             {
                 koneksi.Close();
                 DGVB();
+                GenerateBukuCode();
             }
         }
 
@@ -313,6 +328,7 @@ namespace Perpustakaan
         {
             DGVB();
             clear();
+            GenerateBukuCode();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -341,9 +357,7 @@ namespace Perpustakaan
                         }
                         else
                         {
-                            tabControl1.TabPages.Remove(tabPage1);
-                            tabControl1.TabPages.Remove(tabPage2);
-                            tabControl1.TabPages.Remove(tabPage4);
+                            
                             panelLogin.Width = 0;
                             btnLogout.Visible = true;
                         }
@@ -373,21 +387,42 @@ namespace Perpustakaan
         {
             try
             {
-
                 koneksi.Open();
-                cmd = new MySqlCommand("INSERT INTO stok_buku(judul_buku,nomor_rak,jumlah_buku) VALUES(@judul_buku,@nomor_rak,@jumlah_buku)", koneksi);
-                cmd.Parameters.Add("@judul_buku", cbJudulBuku.Text);
-                cmd.Parameters.Add("@nomor_rak", Convert.ToInt32(tbNoRak.Text));
-                cmd.Parameters.Add("@jumlah_buku", Convert.ToInt32(tbJumlahBuku.Text));
-                if (cmd.ExecuteNonQuery() > 0)
-                {
-                    MessageBox.Show("Stock added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
+                cmd = new MySqlCommand("SELECT judul_buku FROM stok_buku WHERE judul_buku = '"+cbJudulBuku.Text+"' ", koneksi);
+                reader = cmd.ExecuteReader();
+                reader.Read();
+                    if (cbJudulBuku.Text == reader["judul_buku"].ToString())
+                    {
+                        reader.Close();
+                        cmd2 = new MySqlCommand("UPDATE stok_buku SET nomor_rak = @nomor_rak,jumlah_buku= jumlah_buku + @jumlah_buku WHERE judul_buku = @judul_buku", koneksi);
+                        cmd2.Parameters.Add("@judul_buku", cbJudulBuku.Text);
+                        cmd2.Parameters.Add("@nomor_rak", tbNoRak.Text);
+                        cmd2.Parameters.Add("@jumlah_buku", tbJumlahBuku.Text);
+                        if (cmd2.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Stock updated", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    } else
+                    {
+                        reader.Close();
+                        cmd2 = new MySqlCommand("INSERT INTO stok_buku(judul_buku,nomor_rak,jumlah_buku) VALUES(@judul_buku,@nomor_rak,@jumlah_buku)", koneksi);
+                        cmd2.Parameters.Add("@judul_buku", cbJudulBuku.Text);
+                        cmd2.Parameters.Add("@nomor_rak", Convert.ToInt32(tbNoRak.Text));
+                        cmd2.Parameters.Add("@jumlah_buku", Convert.ToInt32(tbJumlahBuku.Text));
+                        if (cmd2.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Stock added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                reader.Close();
                 clear();
 
             }
@@ -484,53 +519,72 @@ namespace Perpustakaan
         private void dgvPeminjaman_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow dr = dgvPeminjaman.Rows[e.RowIndex];
-
             
-
             idterpilih = Convert.ToInt32(dr.Cells[0].Value.ToString());
             tbNamaPeminjam.Text = dr.Cells[1].Value.ToString();
             tbAlamatPeminjam.Text = dr.Cells[2].Value.ToString();
             cbJudulBukuP.Text = dr.Cells[3].Value.ToString();
             DateTime clicked = Convert.ToDateTime(dr.Cells[4].Value.ToString());
-            label15.Text = clicked.ToShortDateString();
+            dateTimePicker1.Text = clicked.ToShortDateString();
             cbStatus.Text = "Kembali";
+            materialLabel8.Visible = true;
+            dateTimePicker1.Visible = true;
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
             try
             {
-
-                if (cbStatus.Text == "Pinjam")
+                if (tbNamaPeminjam.Text == "" || tbAlamatPeminjam.Text == "" || cbJudulBukuP.Text == "" || cbStatus.Text == "")
                 {
-                    koneksi.Open();
-                    cmd = new MySqlCommand("INSERT INTO peminjaman(nama_peminjam,alamat_peminjam,judul_buku,tanggal_pinjam,status_peminjaman) VALUES(@nama_peminjam,@alamat_peminjam,@judul_buku,@tanggal_pinjam,@status_peminjaman)", koneksi);
-                    cmd.Parameters.Add("@nama_peminjam", tbNamaPeminjam.Text);
-                    cmd.Parameters.Add("@alamat_peminjam", tbAlamatPeminjam.Text);
-                    cmd.Parameters.Add("@judul_buku", cbJudulBukuP.Text);
-                    cmd.Parameters.Add("@tanggal_pinjam", Convert.ToDateTime(label15.Text));
-                    cmd.Parameters.Add("@status_peminjaman", cbStatus.Text);
-                    if (cmd.ExecuteNonQuery() > 0)
-                    {
-                        MessageBox.Show("Success !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                } else if (cbStatus.Text == "Kembali")
+                    MessageBox.Show("Please fill all fields", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                } else
                 {
-                    koneksi.Open();
-                    cmd = new MySqlCommand("UPDATE peminjaman SET tanggal_kembali = @tanggal_kembali,status_peminjaman = @status_peminjaman WHERE id = '" + idterpilih +"'", koneksi);
-                    cmd.Parameters.Add("@tanggal_kembali", Convert.ToDateTime(label15.Text));
-                    cmd.Parameters.Add("@status_peminjaman", cbStatus.Text);
-                    if (cmd.ExecuteNonQuery() > 0)
+                    if (cbStatus.Text == "Pinjam")
                     {
-                        MessageBox.Show("Success !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        koneksi.Open();
+                        cmd = new MySqlCommand("INSERT INTO peminjaman(nama_peminjam,alamat_peminjam,judul_buku,tanggal_pinjam,status_peminjaman) VALUES(@nama_peminjam,@alamat_peminjam,@judul_buku,@tanggal_pinjam,@status_peminjaman)", koneksi);
+                        cmd.Parameters.Add("@nama_peminjam", tbNamaPeminjam.Text);
+                        cmd.Parameters.Add("@alamat_peminjam", tbAlamatPeminjam.Text);
+                        cmd.Parameters.Add("@judul_buku", cbJudulBukuP.Text);
+                        cmd.Parameters.Add("@tanggal_pinjam", Convert.ToDateTime(label15.Text));
+                        cmd.Parameters.Add("@status_peminjaman", cbStatus.Text);
+                        cmd2 = new MySqlCommand("UPDATE stok_buku SET jumlah_buku = jumlah_buku - 1 WHERE judul_buku = @judul_buku");
+                        cmd2.Parameters.Add("@judul_buku", cbJudulBukuP.Text);
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            if(cmd2.ExecuteNonQuery() > 0)
+                            {
+                                MessageBox.Show("Success !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                materialLabel8.Visible = false;
+                                dateTimePicker1.Visible = false;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    else
+                    else if (cbStatus.Text == "Kembali")
                     {
-                        MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        koneksi.Open();
+                        cmd = new MySqlCommand("UPDATE peminjaman SET tanggal_kembali = @tanggal_kembali,status_peminjaman = @status_peminjaman WHERE id = '" + idterpilih + "'", koneksi);
+                        cmd.Parameters.Add("@tanggal_kembali", Convert.ToDateTime(dateTimePicker1.Text));
+                        cmd.Parameters.Add("@status_peminjaman", cbStatus.Text);
+                        cmd2 = new MySqlCommand("UPDATE stok_buku SET jumlah_buku = jumlah_buku + 1 WHERE judul_buku = @judul_buku");
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            if (cmd2.ExecuteNonQuery() > 0)
+                            {
+                                MessageBox.Show("Book returned !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                materialLabel8.Visible = false;
+                                dateTimePicker1.Visible = false;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
 
@@ -562,6 +616,8 @@ namespace Perpustakaan
         {
             DGVP();
             clear();
+            materialLabel8.Visible = false;
+            dateTimePicker1.Visible = false;
         }
 
         private void cbJudulBuku_SelectedIndexChanged(object sender, EventArgs e)
@@ -733,6 +789,38 @@ namespace Perpustakaan
         {
             panelLogin.Width = 976;
             btnLogout.Visible = false;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            koneksi.Open();
+            cmd = new MySqlCommand("SELECT *FROM daftar_buku", koneksi);
+            adapter = new MySqlDataAdapter(cmd);
+            adapter.Fill(dt);
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = string.Format("kode_buku LIKE '%" + textBox1.Text + "%' OR judul_buku LIKE '%" + textBox1.Text + "%' OR pengarang LIKE '%" + textBox1.Text + "%' OR kategori LIKE '%" + textBox1.Text + "%' ");
+            dgvBuku.DataSource = dv.ToTable();
+            koneksi.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvUser_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow dr = dgvUser.Rows[e.RowIndex];
+
+            username.Text = dr.Cells[0].Value.ToString();
+            password.Text = dr.Cells[1].Value.ToString();
+            status.Text = dr.Cells[2].Value.ToString();
+        }
+
+        private void tbNoRak_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }
