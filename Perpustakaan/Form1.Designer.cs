@@ -143,7 +143,7 @@
             this.panelLogin.Controls.Add(this.tbUsername);
             this.panelLogin.Location = new System.Drawing.Point(12, 73);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(0, 575);
+            this.panelLogin.Size = new System.Drawing.Size(976, 575);
             this.panelLogin.TabIndex = 13;
             // 
             // label7
@@ -151,7 +151,7 @@
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(-109, 254);
+            this.label7.Location = new System.Drawing.Point(379, 254);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 20);
             this.label7.TabIndex = 4;
@@ -162,7 +162,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(-108, 201);
+            this.label6.Location = new System.Drawing.Point(380, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 20);
             this.label6.TabIndex = 3;
@@ -178,7 +178,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(-105, 321);
+            this.btnLogin.Location = new System.Drawing.Point(383, 321);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(240, 33);
             this.btnLogin.TabIndex = 2;
@@ -190,16 +190,17 @@
             // 
             this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(-105, 277);
+            this.tbPassword.Location = new System.Drawing.Point(383, 277);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(240, 27);
             this.tbPassword.TabIndex = 1;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbUsername
             // 
             this.tbUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(-105, 224);
+            this.tbUsername.Location = new System.Drawing.Point(383, 224);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(240, 27);
             this.tbUsername.TabIndex = 0;
@@ -922,6 +923,7 @@
             this.tbJumlahBuku.TabIndex = 52;
             this.tbJumlahBuku.TabStop = false;
             this.tbJumlahBuku.UseSystemPasswordChar = false;
+            this.tbJumlahBuku.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbJumlahBuku_KeyPress);
             // 
             // textBox2
             // 
@@ -1123,11 +1125,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 660);
+            this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
