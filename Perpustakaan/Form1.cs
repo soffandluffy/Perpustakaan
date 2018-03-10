@@ -16,7 +16,7 @@ namespace Perpustakaan
     public partial class Form1 : Form
     {
 
-        MySqlConnection koneksi = new MySqlConnection("server = localhost; database = perpus_soffan; uid = root; pwd ='exsoft123;' ;");
+        MySqlConnection koneksi = new MySqlConnection("server = localhost; database = perpus_soffan; uid = root; pwd =");
         MySqlCommand cmd;
         MySqlCommand cmd2;
         MySqlCommand cmd3;
